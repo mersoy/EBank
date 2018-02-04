@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		11564B182025F7CE00EE6CC9 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B172025F7CE00EE6CC9 /* AccountCoordinator.swift */; };
 		11564B1A2025F81000EE6CC9 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B192025F81000EE6CC9 /* AnalyticsManager.swift */; };
-		11564B1D2025F92100EE6CC9 /* AccountViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B1C2025F92100EE6CC9 /* AccountViewFactory.swift */; };
 		11564B202025FA2A00EE6CC9 /* Storyboard+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B1F2025FA2A00EE6CC9 /* Storyboard+Util.swift */; };
 		11564B222025FD5100EE6CC9 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B212025FD5100EE6CC9 /* TransactionDetailsViewController.swift */; };
 		11564B242025FD8E00EE6CC9 /* TransactionDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B232025FD8E00EE6CC9 /* TransactionDetails.xib */; };
@@ -61,7 +60,6 @@
 /* Begin PBXFileReference section */
 		11564B172025F7CE00EE6CC9 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
 		11564B192025F81000EE6CC9 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
-		11564B1C2025F92100EE6CC9 /* AccountViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewFactory.swift; sourceTree = "<group>"; };
 		11564B1F2025FA2A00EE6CC9 /* Storyboard+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Util.swift"; sourceTree = "<group>"; };
 		11564B212025FD5100EE6CC9 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
 		11564B232025FD8E00EE6CC9 /* TransactionDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetails.xib; sourceTree = "<group>"; };
@@ -226,7 +224,6 @@
 				11BE2E952025D7E400C127E0 /* AccountService.swift */,
 				11BE2E972025D80800C127E0 /* Transaction.swift */,
 				11564B172025F7CE00EE6CC9 /* AccountCoordinator.swift */,
-				11564B1C2025F92100EE6CC9 /* AccountViewFactory.swift */,
 				11564B212025FD5100EE6CC9 /* TransactionDetailsViewController.swift */,
 				11564B232025FD8E00EE6CC9 /* TransactionDetails.xib */,
 				11564B2C2026039600EE6CC9 /* AccountList.xib */,
@@ -408,7 +405,6 @@
 				11564B3E20265F7E00EE6CC9 /* TransactionTableCell.swift in Sources */,
 				11564B44202671F000EE6CC9 /* EditTransactionViewController.swift in Sources */,
 				11564B3C20262DFE00EE6CC9 /* NetworkResult.swift in Sources */,
-				11564B1D2025F92100EE6CC9 /* AccountViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
