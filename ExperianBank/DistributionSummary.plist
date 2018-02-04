@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>E-Bank.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>672FFF80574B913EFE1E6475767A57BAA1FE7D83</string>
+				<key>dateExpires</key>
+				<string>03/02/2021</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>ZEM8S2HVT4.com.multi.experian</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>ZEM8S2HVT4</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>ZEM8S2HVT4.com.multi.experian</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>E-Bank.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>61bcaac6-40d7-4aa7-839d-df6ee9cab222</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.multi.experian</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>ZEM8S2HVT4</string>
+				<key>name</key>
+				<string>SCHIBSTED PRODUCTS &amp; TECHNOLOGY UK LIMITED</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
