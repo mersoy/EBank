@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11564B182025F7CE00EE6CC9 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B172025F7CE00EE6CC9 /* AccountCoordinator.swift */; };
+		11564B1A2025F81000EE6CC9 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B192025F81000EE6CC9 /* AnalyticsManager.swift */; };
+		11564B1D2025F92100EE6CC9 /* AccountViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B1C2025F92100EE6CC9 /* AccountViewFactory.swift */; };
+		11564B202025FA2A00EE6CC9 /* Storyboard+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B1F2025FA2A00EE6CC9 /* Storyboard+Util.swift */; };
+		11564B222025FD5100EE6CC9 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B212025FD5100EE6CC9 /* TransactionDetailsViewController.swift */; };
+		11564B242025FD8E00EE6CC9 /* TransactionDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B232025FD8E00EE6CC9 /* TransactionDetails.xib */; };
+		11564B272026006100EE6CC9 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B262026006100EE6CC9 /* LoginCoordinator.swift */; };
+		11564B2B202600CE00EE6CC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B2A202600CE00EE6CC9 /* LoginViewController.swift */; };
+		11564B2D2026039600EE6CC9 /* AccountList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B2C2026039600EE6CC9 /* AccountList.xib */; };
+		11564B332026276400EE6CC9 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B322026276400EE6CC9 /* LoginView.xib */; };
+		11564B3520262A3500EE6CC9 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B3420262A3500EE6CC9 /* UIViewController+Utils.swift */; };
+		11564B3820262B7C00EE6CC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B3720262B7C00EE6CC9 /* User.swift */; };
+		11564B3A20262DB300EE6CC9 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B3920262DB300EE6CC9 /* LoginService.swift */; };
+		11564B3C20262DFE00EE6CC9 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B3B20262DFE00EE6CC9 /* NetworkResult.swift */; };
+		11564B3E20265F7E00EE6CC9 /* TransactionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B3D20265F7E00EE6CC9 /* TransactionTableCell.swift */; };
+		11564B4020265F9F00EE6CC9 /* TransactionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B3F20265F9F00EE6CC9 /* TransactionTableCell.xib */; };
+		11564B422026671400EE6CC9 /* UIColor+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B412026671400EE6CC9 /* UIColor+utils.swift */; };
+		11564B44202671F000EE6CC9 /* EditTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B43202671F000EE6CC9 /* EditTransactionViewController.swift */; };
+		11564B46202671FD00EE6CC9 /* EditTransaction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B45202671FD00EE6CC9 /* EditTransaction.xib */; };
+		11564B48202674F700EE6CC9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B47202674F700EE6CC9 /* CategoryCell.swift */; };
+		11564B4A2026752C00EE6CC9 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11564B492026752C00EE6CC9 /* CategoryCell.xib */; };
+		11564B4C2027202F00EE6CC9 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B4B2027202F00EE6CC9 /* Defaults.swift */; };
+		11564B4E20272C5800EE6CC9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11564B4D20272C5800EE6CC9 /* NavigationController.swift */; };
+		11BE2E642025D4CA00C127E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E632025D4CA00C127E0 /* AppDelegate.swift */; };
+		11BE2E662025D4CA00C127E0 /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E652025D4CA00C127E0 /* AccountListViewController.swift */; };
+		11BE2E6D2025D4CA00C127E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BE2E6C2025D4CA00C127E0 /* Assets.xcassets */; };
+		11BE2E702025D4CA00C127E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BE2E6E2025D4CA00C127E0 /* LaunchScreen.storyboard */; };
+		11BE2E7B2025D4CB00C127E0 /* TransationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E7A2025D4CB00C127E0 /* TransationGenerator.swift */; };
+		11BE2E862025D4CB00C127E0 /* E_BankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E852025D4CB00C127E0 /* E_BankUITests.swift */; };
+		11BE2E962025D7E400C127E0 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E952025D7E400C127E0 /* AccountService.swift */; };
+		11BE2E982025D80800C127E0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E972025D80800C127E0 /* Transaction.swift */; };
+		11BE2E9B2025D8E700C127E0 /* MockTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E9A2025D8E700C127E0 /* MockTransactions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11BE2E772025D4CB00C127E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BE2E582025D4CA00C127E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BE2E5F2025D4CA00C127E0;
+			remoteInfo = "E-Bank";
+		};
+		11BE2E822025D4CB00C127E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BE2E582025D4CA00C127E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BE2E5F2025D4CA00C127E0;
+			remoteInfo = "E-Bank";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11564B172025F7CE00EE6CC9 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		11564B192025F81000EE6CC9 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		11564B1C2025F92100EE6CC9 /* AccountViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewFactory.swift; sourceTree = "<group>"; };
+		11564B1F2025FA2A00EE6CC9 /* Storyboard+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Util.swift"; sourceTree = "<group>"; };
+		11564B212025FD5100EE6CC9 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
+		11564B232025FD8E00EE6CC9 /* TransactionDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetails.xib; sourceTree = "<group>"; };
+		11564B262026006100EE6CC9 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		11564B2A202600CE00EE6CC9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		11564B2C2026039600EE6CC9 /* AccountList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountList.xib; sourceTree = "<group>"; };
+		11564B322026276400EE6CC9 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		11564B3420262A3500EE6CC9 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		11564B3720262B7C00EE6CC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		11564B3920262DB300EE6CC9 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		11564B3B20262DFE00EE6CC9 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		11564B3D20265F7E00EE6CC9 /* TransactionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableCell.swift; sourceTree = "<group>"; };
+		11564B3F20265F9F00EE6CC9 /* TransactionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableCell.xib; sourceTree = "<group>"; };
+		11564B412026671400EE6CC9 /* UIColor+utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+utils.swift"; sourceTree = "<group>"; };
+		11564B43202671F000EE6CC9 /* EditTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTransactionViewController.swift; sourceTree = "<group>"; };
+		11564B45202671FD00EE6CC9 /* EditTransaction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTransaction.xib; sourceTree = "<group>"; };
+		11564B47202674F700EE6CC9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		11564B492026752C00EE6CC9 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		11564B4B2027202F00EE6CC9 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		11564B4D20272C5800EE6CC9 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		11BE2E602025D4CA00C127E0 /* E-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BE2E632025D4CA00C127E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11BE2E652025D4CA00C127E0 /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
+		11BE2E6C2025D4CA00C127E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11BE2E6F2025D4CA00C127E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11BE2E712025D4CA00C127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BE2E762025D4CB00C127E0 /* E-BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BE2E7A2025D4CB00C127E0 /* TransationGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransationGenerator.swift; sourceTree = "<group>"; };
+		11BE2E7C2025D4CB00C127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BE2E812025D4CB00C127E0 /* E-BankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-BankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BE2E852025D4CB00C127E0 /* E_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_BankUITests.swift; sourceTree = "<group>"; };
+		11BE2E872025D4CB00C127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BE2E952025D7E400C127E0 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		11BE2E972025D80800C127E0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		11BE2E9A2025D8E700C127E0 /* MockTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11BE2E5D2025D4CA00C127E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE2E732025D4CB00C127E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE2E7E2025D4CB00C127E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11564B1B2025F81700EE6CC9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				11564B192025F81000EE6CC9 /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		11564B1E2025FA0B00EE6CC9 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				11BE2E6E2025D4CA00C127E0 /* LaunchScreen.storyboard */,
+				11564B1F2025FA2A00EE6CC9 /* Storyboard+Util.swift */,
+				11564B3420262A3500EE6CC9 /* UIViewController+Utils.swift */,
+				11564B412026671400EE6CC9 /* UIColor+utils.swift */,
+				11564B4D20272C5800EE6CC9 /* NavigationController.swift */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		11564B252026004E00EE6CC9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				11564B322026276400EE6CC9 /* LoginView.xib */,
+				11564B262026006100EE6CC9 /* LoginCoordinator.swift */,
+				11564B2A202600CE00EE6CC9 /* LoginViewController.swift */,
+				11564B3920262DB300EE6CC9 /* LoginService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		11564B3620262B4200EE6CC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11564B3720262B7C00EE6CC9 /* User.swift */,
+				11564B3B20262DFE00EE6CC9 /* NetworkResult.swift */,
+				11564B4B2027202F00EE6CC9 /* Defaults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11BE2E572025D4CA00C127E0 = {
+			isa = PBXGroup;
+			children = (
+				11BE2E622025D4CA00C127E0 /* E-Bank */,
+				11BE2E792025D4CB00C127E0 /* E-BankTests */,
+				11BE2E842025D4CB00C127E0 /* E-BankUITests */,
+				11BE2E612025D4CA00C127E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11BE2E612025D4CA00C127E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11BE2E602025D4CA00C127E0 /* E-Bank.app */,
+				11BE2E762025D4CB00C127E0 /* E-BankTests.xctest */,
+				11BE2E812025D4CB00C127E0 /* E-BankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11BE2E622025D4CA00C127E0 /* E-Bank */ = {
+			isa = PBXGroup;
+			children = (
+				11564B3620262B4200EE6CC9 /* Models */,
+				11564B252026004E00EE6CC9 /* Login */,
+				11564B1E2025FA0B00EE6CC9 /* StoryBoard */,
+				11564B1B2025F81700EE6CC9 /* Analytics */,
+				11BE2E992025D8CF00C127E0 /* Mocks */,
+				11BE2E932025D4E000C127E0 /* AccountList */,
+				11BE2E632025D4CA00C127E0 /* AppDelegate.swift */,
+				11BE2E6C2025D4CA00C127E0 /* Assets.xcassets */,
+				11BE2E712025D4CA00C127E0 /* Info.plist */,
+			);
+			path = "E-Bank";
+			sourceTree = "<group>";
+		};
+		11BE2E792025D4CB00C127E0 /* E-BankTests */ = {
+			isa = PBXGroup;
+			children = (
+				11BE2E7A2025D4CB00C127E0 /* TransationGenerator.swift */,
+				11BE2E7C2025D4CB00C127E0 /* Info.plist */,
+			);
+			path = "E-BankTests";
+			sourceTree = "<group>";
+		};
+		11BE2E842025D4CB00C127E0 /* E-BankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11BE2E852025D4CB00C127E0 /* E_BankUITests.swift */,
+				11BE2E872025D4CB00C127E0 /* Info.plist */,
+			);
+			path = "E-BankUITests";
+			sourceTree = "<group>";
+		};
+		11BE2E932025D4E000C127E0 /* AccountList */ = {
+			isa = PBXGroup;
+			children = (
+				11BE2E652025D4CA00C127E0 /* AccountListViewController.swift */,
+				11BE2E952025D7E400C127E0 /* AccountService.swift */,
+				11BE2E972025D80800C127E0 /* Transaction.swift */,
+				11564B172025F7CE00EE6CC9 /* AccountCoordinator.swift */,
+				11564B1C2025F92100EE6CC9 /* AccountViewFactory.swift */,
+				11564B212025FD5100EE6CC9 /* TransactionDetailsViewController.swift */,
+				11564B232025FD8E00EE6CC9 /* TransactionDetails.xib */,
+				11564B2C2026039600EE6CC9 /* AccountList.xib */,
+				11564B3D20265F7E00EE6CC9 /* TransactionTableCell.swift */,
+				11564B3F20265F9F00EE6CC9 /* TransactionTableCell.xib */,
+				11564B43202671F000EE6CC9 /* EditTransactionViewController.swift */,
+				11564B45202671FD00EE6CC9 /* EditTransaction.xib */,
+				11564B47202674F700EE6CC9 /* CategoryCell.swift */,
+				11564B492026752C00EE6CC9 /* CategoryCell.xib */,
+			);
+			path = AccountList;
+			sourceTree = "<group>";
+		};
+		11BE2E992025D8CF00C127E0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				11BE2E9A2025D8E700C127E0 /* MockTransactions.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11BE2E5F2025D4CA00C127E0 /* E-Bank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BE2E8A2025D4CB00C127E0 /* Build configuration list for PBXNativeTarget "E-Bank" */;
+			buildPhases = (
+				11BE2E5C2025D4CA00C127E0 /* Sources */,
+				11BE2E5D2025D4CA00C127E0 /* Frameworks */,
+				11BE2E5E2025D4CA00C127E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-Bank";
+			productName = "E-Bank";
+			productReference = 11BE2E602025D4CA00C127E0 /* E-Bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11BE2E752025D4CB00C127E0 /* E-BankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BE2E8D2025D4CB00C127E0 /* Build configuration list for PBXNativeTarget "E-BankTests" */;
+			buildPhases = (
+				11BE2E722025D4CB00C127E0 /* Sources */,
+				11BE2E732025D4CB00C127E0 /* Frameworks */,
+				11BE2E742025D4CB00C127E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11BE2E782025D4CB00C127E0 /* PBXTargetDependency */,
+			);
+			name = "E-BankTests";
+			productName = "E-BankTests";
+			productReference = 11BE2E762025D4CB00C127E0 /* E-BankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11BE2E802025D4CB00C127E0 /* E-BankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BE2E902025D4CB00C127E0 /* Build configuration list for PBXNativeTarget "E-BankUITests" */;
+			buildPhases = (
+				11BE2E7D2025D4CB00C127E0 /* Sources */,
+				11BE2E7E2025D4CB00C127E0 /* Frameworks */,
+				11BE2E7F2025D4CB00C127E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11BE2E832025D4CB00C127E0 /* PBXTargetDependency */,
+			);
+			name = "E-BankUITests";
+			productName = "E-BankUITests";
+			productReference = 11BE2E812025D4CB00C127E0 /* E-BankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11BE2E582025D4CA00C127E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Muge Ersoy";
+				TargetAttributes = {
+					11BE2E5F2025D4CA00C127E0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					11BE2E752025D4CB00C127E0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11BE2E5F2025D4CA00C127E0;
+					};
+					11BE2E802025D4CB00C127E0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11BE2E5F2025D4CA00C127E0;
+					};
+				};
+			};
+			buildConfigurationList = 11BE2E5B2025D4CA00C127E0 /* Build configuration list for PBXProject "E-Bank" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11BE2E572025D4CA00C127E0;
+			productRefGroup = 11BE2E612025D4CA00C127E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11BE2E5F2025D4CA00C127E0 /* E-Bank */,
+				11BE2E752025D4CB00C127E0 /* E-BankTests */,
+				11BE2E802025D4CB00C127E0 /* E-BankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11BE2E5E2025D4CA00C127E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11564B46202671FD00EE6CC9 /* EditTransaction.xib in Resources */,
+				11564B2D2026039600EE6CC9 /* AccountList.xib in Resources */,
+				11564B4020265F9F00EE6CC9 /* TransactionTableCell.xib in Resources */,
+				11564B242025FD8E00EE6CC9 /* TransactionDetails.xib in Resources */,
+				11564B332026276400EE6CC9 /* LoginView.xib in Resources */,
+				11BE2E702025D4CA00C127E0 /* LaunchScreen.storyboard in Resources */,
+				11BE2E6D2025D4CA00C127E0 /* Assets.xcassets in Resources */,
+				11564B4A2026752C00EE6CC9 /* CategoryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE2E742025D4CB00C127E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE2E7F2025D4CB00C127E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11BE2E5C2025D4CA00C127E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11564B182025F7CE00EE6CC9 /* AccountCoordinator.swift in Sources */,
+				11564B3520262A3500EE6CC9 /* UIViewController+Utils.swift in Sources */,
+				11564B1A2025F81000EE6CC9 /* AnalyticsManager.swift in Sources */,
+				11BE2E962025D7E400C127E0 /* AccountService.swift in Sources */,
+				11564B48202674F700EE6CC9 /* CategoryCell.swift in Sources */,
+				11BE2E9B2025D8E700C127E0 /* MockTransactions.swift in Sources */,
+				11564B272026006100EE6CC9 /* LoginCoordinator.swift in Sources */,
+				11564B3A20262DB300EE6CC9 /* LoginService.swift in Sources */,
+				11564B4C2027202F00EE6CC9 /* Defaults.swift in Sources */,
+				11BE2E642025D4CA00C127E0 /* AppDelegate.swift in Sources */,
+				11564B3820262B7C00EE6CC9 /* User.swift in Sources */,
+				11564B422026671400EE6CC9 /* UIColor+utils.swift in Sources */,
+				11BE2E662025D4CA00C127E0 /* AccountListViewController.swift in Sources */,
+				11BE2E982025D80800C127E0 /* Transaction.swift in Sources */,
+				11564B4E20272C5800EE6CC9 /* NavigationController.swift in Sources */,
+				11564B222025FD5100EE6CC9 /* TransactionDetailsViewController.swift in Sources */,
+				11564B202025FA2A00EE6CC9 /* Storyboard+Util.swift in Sources */,
+				11564B2B202600CE00EE6CC9 /* LoginViewController.swift in Sources */,
+				11564B3E20265F7E00EE6CC9 /* TransactionTableCell.swift in Sources */,
+				11564B44202671F000EE6CC9 /* EditTransactionViewController.swift in Sources */,
+				11564B3C20262DFE00EE6CC9 /* NetworkResult.swift in Sources */,
+				11564B1D2025F92100EE6CC9 /* AccountViewFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE2E722025D4CB00C127E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BE2E7B2025D4CB00C127E0 /* TransationGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE2E7D2025D4CB00C127E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BE2E862025D4CB00C127E0 /* E_BankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11BE2E782025D4CB00C127E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BE2E5F2025D4CA00C127E0 /* E-Bank */;
+			targetProxy = 11BE2E772025D4CB00C127E0 /* PBXContainerItemProxy */;
+		};
+		11BE2E832025D4CB00C127E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BE2E5F2025D4CA00C127E0 /* E-Bank */;
+			targetProxy = 11BE2E822025D4CB00C127E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11BE2E6E2025D4CA00C127E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BE2E6F2025D4CA00C127E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11BE2E882025D4CB00C127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11BE2E892025D4CB00C127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11BE2E8B2025D4CB00C127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZEM8S2HVT4;
+				INFOPLIST_FILE = "E-Bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "multi.E-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11BE2E8C2025D4CB00C127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZEM8S2HVT4;
+				INFOPLIST_FILE = "E-Bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "multi.E-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11BE2E8E2025D4CB00C127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "E-BankTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "multi.E-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-Bank.app/E-Bank";
+			};
+			name = Debug;
+		};
+		11BE2E8F2025D4CB00C127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "E-BankTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "multi.E-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-Bank.app/E-Bank";
+			};
+			name = Release;
+		};
+		11BE2E912025D4CB00C127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "E-BankUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "multi.E-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "E-Bank";
+			};
+			name = Debug;
+		};
+		11BE2E922025D4CB00C127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "E-BankUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "multi.E-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "E-Bank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11BE2E5B2025D4CA00C127E0 /* Build configuration list for PBXProject "E-Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BE2E882025D4CB00C127E0 /* Debug */,
+				11BE2E892025D4CB00C127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BE2E8A2025D4CB00C127E0 /* Build configuration list for PBXNativeTarget "E-Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BE2E8B2025D4CB00C127E0 /* Debug */,
+				11BE2E8C2025D4CB00C127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BE2E8D2025D4CB00C127E0 /* Build configuration list for PBXNativeTarget "E-BankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BE2E8E2025D4CB00C127E0 /* Debug */,
+				11BE2E8F2025D4CB00C127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BE2E902025D4CB00C127E0 /* Build configuration list for PBXNativeTarget "E-BankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BE2E912025D4CB00C127E0 /* Debug */,
+				11BE2E922025D4CB00C127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11BE2E582025D4CA00C127E0 /* Project object */;
+}

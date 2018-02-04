@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditTransactionViewController" customModule="E_Bank" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="yly-79-h8o" id="K6g-nQ-u08"/>
+                <outlet property="text" destination="aDO-au-chd" id="JL4-SZ-Y1F"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Mla-F4-te6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this category right?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkY-bE-2et">
+                    <rect key="frame" x="16" y="40" width="343" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yly-79-h8o">
+                    <rect key="frame" x="8" y="154.5" width="359" height="512.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="ZiM-O0-m1I">
+                        <size key="itemSize" width="80" height="117"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="umZ-x2-SGA"/>
+                        <outlet property="delegate" destination="-1" id="N9V-Bx-RD5"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select the right category if you think it is not." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDO-au-chd">
+                    <rect key="frame" x="8" y="103.5" width="359" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zkY-bE-2et" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="5AK-hm-pE8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yly-79-h8o" secondAttribute="trailing" constant="8" id="EsZ-kx-zGF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aDO-au-chd" secondAttribute="trailing" constant="8" id="FSz-AW-Nxu"/>
+                <constraint firstItem="zkY-bE-2et" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="G08-gd-Mgr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yly-79-h8o" secondAttribute="bottom" id="Rs5-2r-uqx"/>
+                <constraint firstItem="yly-79-h8o" firstAttribute="top" secondItem="aDO-au-chd" secondAttribute="bottom" constant="30" id="WX9-hG-eFz"/>
+                <constraint firstItem="yly-79-h8o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="YqD-DU-aW6"/>
+                <constraint firstItem="aDO-au-chd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="oyM-4l-RYY"/>
+                <constraint firstItem="aDO-au-chd" firstAttribute="top" secondItem="zkY-bE-2et" secondAttribute="bottom" constant="30" id="x1H-8o-UFe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zkY-bE-2et" secondAttribute="trailing" constant="16" id="zg1-9N-rJR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="151.5"/>
+        </view>
+    </objects>
+</document>

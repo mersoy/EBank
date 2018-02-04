@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="E_Bank" customModuleProvider="target">
+            <connections>
+                <outlet property="username" destination="8P5-WA-gh6" id="YWa-We-MfA"/>
+                <outlet property="view" destination="MnS-cS-kAt" id="oYu-f4-LHU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MnS-cS-kAt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experian Bank" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CL-uV-ZwR">
+                    <rect key="frame" x="59" y="120" width="256.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                    <color key="textColor" red="0.90343171359999996" green="0.29039895529999998" blue="0.37055921549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-WA-gh6">
+                    <rect key="frame" x="16" y="176" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-BN-acc">
+                    <rect key="frame" x="16" y="236" width="343" height="40"/>
+                    <color key="backgroundColor" red="0.044425733387470245" green="0.76687741279602051" blue="0.92607396841049194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Zsv-KH-4XB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginButtonTabbed:" destination="-1" eventType="touchUpInside" id="n0N-ch-RCf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.079625047739999996" green="0.1391142011" blue="0.23457220200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ntr-BN-acc" firstAttribute="leading" secondItem="4VG-zE-q3a" secondAttribute="leading" constant="16" id="0uq-Mr-QmM"/>
+                <constraint firstItem="8P5-WA-gh6" firstAttribute="top" secondItem="5CL-uV-ZwR" secondAttribute="bottom" constant="16" id="5Em-l8-kYA"/>
+                <constraint firstItem="5CL-uV-ZwR" firstAttribute="leading" secondItem="4VG-zE-q3a" secondAttribute="leading" constant="59" id="9GC-r1-cPM"/>
+                <constraint firstItem="4VG-zE-q3a" firstAttribute="trailing" secondItem="ntr-BN-acc" secondAttribute="trailing" constant="16" id="Hz9-Yg-7pv"/>
+                <constraint firstItem="ntr-BN-acc" firstAttribute="top" secondItem="8P5-WA-gh6" secondAttribute="bottom" constant="30" id="P6W-bD-O7q"/>
+                <constraint firstItem="5CL-uV-ZwR" firstAttribute="top" secondItem="4VG-zE-q3a" secondAttribute="top" constant="100" id="XT0-UX-Sfh"/>
+                <constraint firstItem="5CL-uV-ZwR" firstAttribute="centerY" secondItem="4VG-zE-q3a" secondAttribute="centerY" constant="-203.5" id="owi-gH-wnf"/>
+                <constraint firstItem="4VG-zE-q3a" firstAttribute="trailing" secondItem="8P5-WA-gh6" secondAttribute="trailing" constant="16" id="tmT-sa-bgd"/>
+                <constraint firstItem="8P5-WA-gh6" firstAttribute="leading" secondItem="4VG-zE-q3a" secondAttribute="leading" constant="16" id="u1h-UK-yfS"/>
+                <constraint firstItem="4VG-zE-q3a" firstAttribute="trailing" secondItem="5CL-uV-ZwR" secondAttribute="trailing" constant="59.5" id="wBW-co-srq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="4VG-zE-q3a"/>
+            <point key="canvasLocation" x="-519" y="733"/>
+        </view>
+    </objects>
+</document>
