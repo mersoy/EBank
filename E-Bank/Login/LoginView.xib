@@ -27,14 +27,17 @@
                     <color key="textColor" red="0.90343171359999996" green="0.29039895529999998" blue="0.37055921549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-WA-gh6">
-                    <rect key="frame" x="16" y="176" width="343" height="30"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your user name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-WA-gh6">
+                    <rect key="frame" x="16" y="176" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="72H-m5-dSK"/>
+                    </constraints>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-BN-acc">
-                    <rect key="frame" x="16" y="236" width="343" height="40"/>
+                    <rect key="frame" x="16" y="246" width="343" height="40"/>
                     <color key="backgroundColor" red="0.044425733387470245" green="0.76687741279602051" blue="0.92607396841049194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Zsv-KH-4XB"/>
