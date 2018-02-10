@@ -24,8 +24,8 @@ class TransactionTableCell: UITableViewCell {
         if let letter = transaction.category.rawValue.first {
             categoryLabel.text = String(describing: letter)
         }
-        company.text = transaction.description
-        let total = transaction.type == .credit ? "+" : "-"
+        company.text = transaction.detail
+        let total = transaction.transactionType == .credit ? "+" : "-"
         amount.text = total + transaction.amount
         date.text = dateFormatter.string(from: transaction.date)
     }

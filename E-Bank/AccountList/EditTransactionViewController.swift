@@ -35,13 +35,13 @@ class EditTransactionViewController: UIViewController {
 extension EditTransactionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Transaction.category.all().count
+        return Transaction.Category.all().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CategoryCell{
-            let catArray = Transaction.category.all()
+            let catArray = Transaction.Category.all()
             cell.update(with: catArray[indexPath.row])
             return cell
         }
@@ -50,7 +50,7 @@ extension EditTransactionViewController: UICollectionViewDelegate, UICollectionV
     }
     
     func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let category = Transaction.category.all()[indexPath.row]
+        let category = Transaction.Category.all()[indexPath.row]
         self.transaction.category = category
         delegate.didChangeCategory(self, transaction: transaction)
     }

@@ -6,5 +6,5 @@ typealias AsyncResult<T> = (NetworkResult<T>) -> Void
 
 enum NetworkResult<T> {
     case success(T)
-    case failure(Error)
+    case failure(Error?)
 }

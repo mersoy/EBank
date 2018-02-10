@@ -9,7 +9,7 @@ class CategoryCell: UICollectionViewCell {
     @IBOutlet weak var categoryName: UILabel!
     
 
-    func update(with category:Transaction.category){
+    func update(with category:Transaction.Category){
         self.category.layer.cornerRadius = 40
         self.category.layer.borderColor = UIColor.black.cgColor
         self.category.layer.borderWidth = 1

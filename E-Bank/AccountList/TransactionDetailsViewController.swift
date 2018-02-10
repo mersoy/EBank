@@ -47,7 +47,7 @@ class TransactionDetailsViewController : UIViewController {
     }
     
     private func setViewData() {
-        amount.text = transaction.type == .credit ? "+" : "-"
+        amount.text = transaction.transactionType == .credit ? "+" : "-"
         amount.text = (amount.text ?? "") + transaction.amount
         categoryName.text = transaction.category.rawValue
         if let colour = colour[transaction.category] {
@@ -58,7 +58,7 @@ class TransactionDetailsViewController : UIViewController {
             categoryFirstLetter.text = String(describing: letter)
         }
         self.location.text = "Location: " +  transaction.location
-        companyName.text = transaction.description
+        companyName.text = transaction.detail
         let location = CLLocation(latitude: 51.5333, longitude: 0.1322)
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 5000, 5000)
         map.setRegion(coordinateRegion, animated: true)

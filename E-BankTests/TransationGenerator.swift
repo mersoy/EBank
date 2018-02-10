@@ -14,10 +14,6 @@ class E_BankTests: XCTestCase {
         let coor = AccountCoordinator(service: DefaultAccountService(), analytics: DefaultAnalyticsManager(), defaults: EDefaults())
         coor.start()
         let nv = coor.rootViewController as! NavigationController
-        var assert = false
-        if let vc = nv.topViewController as? AccountListViewController {
-            assert = true
-        }
-        
+        XCTAssert((nv.topViewController as? AccountListViewController) != nil)
     }
 }

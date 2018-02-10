@@ -13,8 +13,13 @@ class MockTransactions {
     
     func generate(with count: Int) -> [Transaction] {
         var transactions = [Transaction]()
-        for _ in 0..<count {
-            let transaction = Transaction(date:dateGenerator() , description: descriptionGenerator(), amount: amountGenerator(),type: typeGenerator(), category: categoryGenerator(), location: "London")
+        for index in 0..<count {
+            let transaction = Transaction(id: index + 1 ,
+                                          category: categoryGenerator(),
+                                          type: typeGenerator(), date:dateGenerator(),
+                                          detail: detailGenerator(),
+                                          amount: amountGenerator(),
+                                          location: "London")
             transactions.append(transaction)
         }
         return transactions
@@ -30,7 +35,7 @@ class MockTransactions {
         return formatter ?? Date()
     }
     
-    private func descriptionGenerator() -> String {
+    private func detailGenerator() -> String {
         let letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
         let letter = letters[Int(arc4random_uniform(UInt32(letters.count - 1)))]
         return "Company " + letter
@@ -42,15 +47,14 @@ class MockTransactions {
         return "£"+a + "," + b
     }
     
-    private func typeGenerator() -> Transaction.type {
-        let types = [Transaction.type.credit,
-                     Transaction.type.debit]
+    private func typeGenerator() -> Transaction.TType {
+        let types = [Transaction.TType.credit,Transaction.TType.debit]
         let index = Int(arc4random_uniform(UInt32(2)))
         return types[index]
     }
     
-    private func categoryGenerator() -> Transaction.category {
-        let all = Transaction.category.all()
+    private func categoryGenerator() -> Transaction.Category {
+        let all = Transaction.Category.all()
         let category = all[Int(arc4random_uniform(UInt32(all.count - 1)))]
         return category
     }

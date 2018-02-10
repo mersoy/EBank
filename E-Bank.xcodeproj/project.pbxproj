@@ -38,6 +38,7 @@
 		11BE2E962025D7E400C127E0 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E952025D7E400C127E0 /* AccountService.swift */; };
 		11BE2E982025D80800C127E0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E972025D80800C127E0 /* Transaction.swift */; };
 		11BE2E9B2025D8E700C127E0 /* MockTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE2E9A2025D8E700C127E0 /* MockTransactions.swift */; };
+		11EA80F7202F4D4600D64FA9 /* Transaction-Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA80F6202F4D4600D64FA9 /* Transaction-Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		11BE2E952025D7E400C127E0 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		11BE2E972025D80800C127E0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		11BE2E9A2025D8E700C127E0 /* MockTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactions.swift; sourceTree = "<group>"; };
+		11EA80F6202F4D4600D64FA9 /* Transaction-Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction-Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				11564B45202671FD00EE6CC9 /* EditTransaction.xib */,
 				11564B47202674F700EE6CC9 /* CategoryCell.swift */,
 				11564B492026752C00EE6CC9 /* CategoryCell.xib */,
+				11EA80F6202F4D4600D64FA9 /* Transaction-Utils.swift */,
 			);
 			path = AccountList;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				11564B3A20262DB300EE6CC9 /* LoginService.swift in Sources */,
 				11564B4C2027202F00EE6CC9 /* Defaults.swift in Sources */,
 				11BE2E642025D4CA00C127E0 /* AppDelegate.swift in Sources */,
+				11EA80F7202F4D4600D64FA9 /* Transaction-Utils.swift in Sources */,
 				11564B3820262B7C00EE6CC9 /* User.swift in Sources */,
 				11564B422026671400EE6CC9 /* UIColor+utils.swift in Sources */,
 				11BE2E662025D4CA00C127E0 /* AccountListViewController.swift in Sources */,

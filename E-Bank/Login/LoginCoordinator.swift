@@ -33,9 +33,7 @@ extension LoginCoordinator : LoginViewControllerDelegate {
                 if case .success( _) = result {
                     defaults.saveName(name: name)
                     analytics.sendEvent(eventName: .loginSuccessful)
-                    
-                    let coordinator = AccountCoordinator(service: DefaultAccountService(),
-                                                         analytics: analytics ,defaults: EDefaults())
+                    let coordinator = AccountCoordinator(service: DefaultAccountService(defaults: EDefaults()), analytics: analytics ,defaults: EDefaults())
                     coordinator.start()
                 }else{
                     analytics.sendEvent(eventName: .loginFailed)

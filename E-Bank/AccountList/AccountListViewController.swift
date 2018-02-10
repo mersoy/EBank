@@ -3,6 +3,7 @@
 import UIKit
 
 protocol AccountListViewControllerDelegate:class {
+    func retrieveTransactions(completion: AsyncResult<[String:[Transaction]]>)
     func didSelect(transaction: Transaction)
 }
 
@@ -30,13 +31,24 @@ class AccountListViewController: UIViewController {
         tableView.estimatedRowHeight = 52
         edgesForExtendedLayout = .bottom
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        delegate.retrieveTransactions(){ result in
+            if case let .success(transactions) = result {
+                var t = transactions
+                self.keys = generateKeys(&t)
+                self.transaction = t
+                tableView.reloadData()
+            }
+        }
+    }
 }
 
 extension AccountListViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_: UITableView, numberOfRowsInSection section: Int) -> Int {
         let value = keys[section]
-        
         return transaction[value]?.count ?? 0
     }
     
