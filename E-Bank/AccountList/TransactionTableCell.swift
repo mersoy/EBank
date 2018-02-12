@@ -3,21 +3,19 @@
 import UIKit
 
 class TransactionTableCell: UITableViewCell {
-    
     private lazy var dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         return dateFormatter
     }()
-    
-    
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var category: UIView!
-    @IBOutlet weak var company: UILabel!
-    @IBOutlet weak var amount: UILabel!
-    @IBOutlet weak var date: UILabel!
-    
-    func update(with transaction: Transaction){
+
+    @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet var category: UIView!
+    @IBOutlet var company: UILabel!
+    @IBOutlet var amount: UILabel!
+    @IBOutlet var date: UILabel!
+
+    func update(with transaction: Transaction) {
         if let code = colour[transaction.category] {
             category.backgroundColor = UIColor(hexString: code)
         }
@@ -29,5 +27,4 @@ class TransactionTableCell: UITableViewCell {
         amount.text = total + transaction.amount
         date.text = dateFormatter.string(from: transaction.date)
     }
-    
 }

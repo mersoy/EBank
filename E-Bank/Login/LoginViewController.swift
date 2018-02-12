@@ -3,24 +3,23 @@
 import UIKit
 
 protocol LoginViewControllerDelegate: class {
-    func login(_ loginViewController:LoginViewController, username: String)
+    func login(_ loginViewController: LoginViewController, username: String)
 }
 
 class LoginViewController: UIViewController {
-    
-    @IBOutlet private weak var username: UITextField!
+    @IBOutlet private var username: UITextField!
     var delegate: LoginViewControllerDelegate
-    
-    init(delegate:LoginViewControllerDelegate ) {
+
+    init(delegate: LoginViewControllerDelegate) {
         self.delegate = delegate
         super.init(nibName: "LoginView", bundle: nil)
     }
-    
-    required init?(coder aDecoder: NSCoder) {
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    @IBAction func loginButtonTabbed(_ sender: Any) {
-        delegate.login(self,username: username.text ?? "")
+
+    @IBAction func loginButtonTabbed(_: Any) {
+        delegate.login(self, username: username.text ?? "")
     }
 }

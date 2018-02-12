@@ -11,10 +11,10 @@ protocol AnalyticsManager {
     func sendEvent(eventName: EventName)
 }
 
-class DefaultAnalyticsManager : AnalyticsManager {
+class DefaultAnalyticsManager: AnalyticsManager {
     func sendEvent(eventName: EventName) {
-        //This will be sent to server
-        //For MVP just printing on terminal
+        // This will be sent to server
+        // For MVP just printing on terminal
         print("Event Neme" + eventName.rawValue + "has been sent")
     }
 }

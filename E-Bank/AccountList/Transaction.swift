@@ -2,20 +2,20 @@
 
 import UIKit
 
-var colour = [Transaction.Category.bankingfees : "27487c",
-              Transaction.Category.cashWithDrawal : "b2ffb2",
-              Transaction.Category.clothing : "80619d",
-              Transaction.Category.restaurants : "ab5d33",
-              Transaction.Category.payment : "fd878f",
-              Transaction.Category.energy : "acf6f8",
-              Transaction.Category.generalHealth : "ea2a3f",
-              Transaction.Category.insurance : "43a24b",
-              Transaction.Category.loanRepayment : "ff7f50",
-              Transaction.Category.general : "b2dbd5"
+var colour = [
+    Transaction.Category.bankingfees: "27487c",
+    Transaction.Category.cashWithDrawal: "b2ffb2",
+    Transaction.Category.clothing: "80619d",
+    Transaction.Category.restaurants: "ab5d33",
+    Transaction.Category.payment: "fd878f",
+    Transaction.Category.energy: "acf6f8",
+    Transaction.Category.generalHealth: "ea2a3f",
+    Transaction.Category.insurance: "43a24b",
+    Transaction.Category.loanRepayment: "ff7f50",
+    Transaction.Category.general: "b2dbd5",
 ]
 
-class Transaction:NSObject, NSCoding {
-    
+class Transaction: NSObject, NSCoding {
     func encode(with aCoder: NSCoder) {
         aCoder.encode(id, forKey: "id")
         aCoder.encode(category.rawValue, forKey: "category")
@@ -24,9 +24,8 @@ class Transaction:NSObject, NSCoding {
         aCoder.encode(detail, forKey: "detail")
         aCoder.encode(amount, forKey: "amount")
         aCoder.encode(location, forKey: "location")
-
     }
-    
+
     required convenience init?(coder aDecoder: NSCoder) {
         let id = aDecoder.decodeInteger(forKey: "id")
         let categoryString = aDecoder.decodeObject(forKey: "category") as? String
@@ -46,17 +45,17 @@ class Transaction:NSObject, NSCoding {
                   amount: amount,
                   location: location)
     }
-    
-    init(id:Int, category:Transaction.Category , type: Transaction.TType? , date: Date, detail: String, amount: String, location: String){
+
+    init(id: Int, category: Transaction.Category, type: Transaction.TType?, date: Date, detail: String, amount: String, location: String) {
         self.id = id
         self.category = category
-        self.transactionType = type
+        transactionType = type
         self.date = date
         self.detail = detail
         self.amount = amount
         self.location = location
     }
-    
+
     enum Category: String {
         case bankingfees = "Banking Fees"
         case cashWithDrawal = "Cash Withdrawal"
@@ -68,17 +67,17 @@ class Transaction:NSObject, NSCoding {
         case insurance = "Insurance Expense"
         case loanRepayment = "Loan Repayment"
         case general = "General"
-        
-        static func all() -> [Category]{
-            return [.bankingfees, .cashWithDrawal, .clothing, .restaurants, .payment, .energy,.generalHealth,.insurance,.loanRepayment,.general]
+
+        static func all() -> [Category] {
+            return [.bankingfees, .cashWithDrawal, .clothing, .restaurants, .payment, .energy, .generalHealth, .insurance, .loanRepayment, .general]
         }
     }
-    
-    enum TType:String {
+
+    enum TType: String {
         case debit
         case credit
     }
-    
+
     let id: Int
     let date: Date
     let detail: String

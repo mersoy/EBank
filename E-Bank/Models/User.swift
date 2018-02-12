@@ -3,7 +3,7 @@
 import Foundation
 
 enum User {
-    case endUser;
+    case endUser
     case bank
     case experian
 }
